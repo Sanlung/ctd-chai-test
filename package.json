@@ -2,9 +2,9 @@
   "name": "chai-test",
   "version": "1.0.0",
   "description": "tutorial for testing with Chai",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo 'Error, no test is defined'",
+    "test": "mocha tests/*.js --exit",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -13,6 +13,10 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.15",
+    "zombie": "^6.1.4"
   }
 }
